@@ -1,0 +1,13 @@
+This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded . Scripts with the defer attribute will prevent the DOMContentLoaded event from firing until the script has loaded and finished evaluating.
+
+module: Causes the code to be treated as a JavaScript module. The processing of the script contents is not affected by the charset and defer attributes. For information on using module, see our JavaScript modules guide. Unlike classic scripts, module scripts require the use of the CORS protocol for cross-origin fetching.
+
+---[1]---
+<script src="game.js" defer type="module"></script>
+defer it so loads after the body
+type=module, going to use import and exports statements to have mutiple JavaScript file to breck down our module
+
+
+[2]
+// update() move the snake update the things, tell if we loss the game
+// draw() will take the information from update and then draw it
